@@ -44,7 +44,7 @@ class Solution:
                     if arr[j] > arr[j + 1]:
                         minimum = arr[j]
                         arr[j] = arr[j+1]
-                        arr[j+1] = temp
+                        arr[j+1] = minimum
             return arr
         
         checkpoints = bubblesort(checkpoints)
